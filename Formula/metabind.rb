@@ -5,11 +5,11 @@ class Metabind < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/metabindai/homebrew-tap/releases/download/v0.10.14/metabind-darwin-arm64.tar.gz"
-      sha256 "aa598302182cd3c8bd075163f924bc6928363637a023e89e9833e3e0b3e25390"
+      url "https://github.com/metabindai/homebrew-tap/releases/download/v0.10.15/metabind-darwin-arm64.tar.gz"
+      sha256 "fed06ce5e8e8572aa485ab4aadaaf85eae0b9ffdfd9389b188f828c1f6746a87"
     else
-      url "https://github.com/metabindai/homebrew-tap/releases/download/v0.10.14/metabind-darwin-x64.tar.gz"
-      sha256 "51c48aac051ac58fb40c3c3dc01522f49d118fc364ba9faa892a23ff4cadbf25"
+      url "https://github.com/metabindai/homebrew-tap/releases/download/v0.10.15/metabind-darwin-x64.tar.gz"
+      sha256 "b974b9b8842df4f3e702774acc1fdcabef4624508e0335896d8a8dfd4f02d45e"
     end
   end
 
@@ -22,6 +22,6 @@ class Metabind < Formula
   end
 
   test do
-    assert_match "0.10.14", shell_output("#{bin}/metabind --version")
+    assert_match "0.10.15", shell_output("#{bin}/metabind --version")
   end
 end
