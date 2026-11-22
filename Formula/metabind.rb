@@ -5,21 +5,21 @@ class Metabind < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/metabindai/homebrew-tap/releases/download/v0.10.20/metabind-darwin-arm64.tar.gz"
-      sha256 "f1ad2944d810ec8ba8d46b764813bbce660ac61e345aed677b194e6ef13ce77f"
+      url "https://github.com/metabindai/homebrew-tap/releases/download/v0.10.21/metabind-darwin-arm64.tar.gz"
+      sha256 "104a60f435bc4701c2e10116b6e7836b1d21186eebc9b6d5a5345f6e8c9ab0b9"
     else
-      url "https://github.com/metabindai/homebrew-tap/releases/download/v0.10.20/metabind-darwin-x64.tar.gz"
-      sha256 "7b7d418cbd773a476f65799eeb49369e1cba0d21d55d316389c956c9d16619ae"
+      url "https://github.com/metabindai/homebrew-tap/releases/download/v0.10.21/metabind-darwin-x64.tar.gz"
+      sha256 "63ba80864b61d5f78299bc4071a1ecea36bc79b6546a8bf47821e9fa0d2d48a0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/metabindai/homebrew-tap/releases/download/v0.10.20/metabind-linux-arm64.tar.gz"
-      sha256 "cd99bf7e61778b59ae8d35f481bfe73686b8b4c118c7b2734cda1b6592ead439"
+      url "https://github.com/metabindai/homebrew-tap/releases/download/v0.10.21/metabind-linux-arm64.tar.gz"
+      sha256 "604a18db5ee5c5ad4f05ea4ad5bdcb887604846cb4b801fac1b01ac50831804c"
     else
-      url "https://github.com/metabindai/homebrew-tap/releases/download/v0.10.20/metabind-linux-x64.tar.gz"
-      sha256 "949528106c479e55c3a395ae8290a49e1bdd4616e1e23b5548538fd65b6e2aa6"
+      url "https://github.com/metabindai/homebrew-tap/releases/download/v0.10.21/metabind-linux-x64.tar.gz"
+      sha256 "89c1816c5eab08fc05b36d388b7e6303b4e29692700cd6e0870455046c1a8894"
     end
   end
 
@@ -30,6 +30,6 @@ class Metabind < Formula
   end
 
   test do
-    assert_match "0.10.20", shell_output("#{bin}/metabind --version")
+    assert_match "0.10.21", shell_output("#{bin}/metabind --version")
   end
 end
